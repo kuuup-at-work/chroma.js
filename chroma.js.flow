@@ -1,14 +1,14 @@
 /* @flow */
 
 declare class ChromaColor {
-    alpha(value?: number): ChromaColor;
+    alpha(value?: number): ChromaColor | number;
     darken(value?: number): ChromaColor;
     brighten(value?: number): ChromaColor;
     saturate(value?: number): ChromaColor;
     desaturate(value?: number): ChromaColor;
     set(channel: string, value: number):ChromaColor;
     get(channel: string): number;
-    luminance(value?: number, mode?: string): ChromaColor;
+    luminance(value?: number, mode?: string): ChromaColor | number;
     hex(): string;
     name(): string;
     css(mode?: string): string;
